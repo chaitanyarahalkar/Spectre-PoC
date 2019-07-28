@@ -8,9 +8,6 @@
 #include <x86intrin.h> /* for rdtscp and clflush */
 #endif
 
-/********************************************************************
-Victim code.
-********************************************************************/
 unsigned int array1_size = 16;
 uint8_t unused1[64];
 uint8_t array1[160] = {
@@ -44,9 +41,6 @@ void victim_function(size_t x) {
   }
 }
 
-/********************************************************************
-Analysis code
-********************************************************************/
 #define CACHE_HIT_THRESHOLD (80) /* assume cache hit if time <= threshold */
 
 /* Report best guess in value[0] and runner-up in value[1] */
