@@ -52,5 +52,6 @@ Give a ⭐️ if this project helped you!
 
 #### License
 
+Copyright © 2019 [Chaitanya Rahalkar](https://github.com/chaitanyarahalkar).<br />
 This project is [MIT](https://github.com/chaitanyarahalkar/Spectre-POC/blob/master/LICENSE) licensed.
 ***
