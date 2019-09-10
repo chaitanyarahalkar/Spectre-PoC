@@ -1,7 +1,17 @@
-# Spectre Demonstration in C 
+# Proof of Concept of Spectre
+
+<img src="spectre-text.png">
+
+### What is Spectre and Meltdown? 
+
+Meltdown and Spectre exploit critical vulnerabilities in modern processors. These hardware vulnerabilities allow programs to steal data which is currently processed on the computer. While programs are typically not permitted to read data from other programs, a malicious program can exploit Meltdown and Spectre to get hold of secrets stored in the memory of other running programs. This might include your passwords stored in a password manager or browser, your personal photos, emails, instant messages and even business-critical documents.
 
 
-# Code Explanation
+### Etymology of Spectre 
+
+Spectre is based on problems in speculative execution. That's how the exploit got its name. 
+
+### Code Explanation
 
 In this code, if the compiled instructions in victim function() were executed in strict program order, the function would only read from array1[0..15] since array1 size = 16.
 
