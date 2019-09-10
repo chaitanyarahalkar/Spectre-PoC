@@ -27,7 +27,7 @@ The speculative code then reads from array2[array1[x] * 256],leaking the value o
 To complete the attack, a simple flush+probe is used to identify which cache line in array2 was loaded, reveaing the memory contents. The attack is repeated several
 times, so even if the target byte was initially uncached,the first iteration will bring it into the cache
 
-### Running the POC 
+### Running the PoC 
 
 ```bash
 
@@ -44,7 +44,7 @@ root@spectre$ ./spectre
 
 #### Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/chaitanyarahalkar/transaction-system/issues).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/chaitanyarahalkar/Spectre-PoC/issues).
 
 #### Show your support
 
@@ -53,5 +53,5 @@ Give a ⭐️ if this project helped you!
 #### License
 
 Copyright © 2019 [Chaitanya Rahalkar](https://github.com/chaitanyarahalkar).<br />
-This project is [MIT](https://github.com/chaitanyarahalkar/Spectre-POC/blob/master/LICENSE) licensed.
+This project is [MIT](https://github.com/chaitanyarahalkar/Spectre-PoC/blob/master/LICENSE) licensed.
 ***
