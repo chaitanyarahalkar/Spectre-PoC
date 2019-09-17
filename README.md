@@ -31,7 +31,7 @@ times, so even if the target byte was initially uncached,the first iteration wil
 
 ```bash
 
-root@spectre$ gcc -o -std=c99 spectre spectre.c
+root@spectre$ gcc -o spectre -std=c99 spectre.c
 root@spectre$ ./spectre
 
 ```
