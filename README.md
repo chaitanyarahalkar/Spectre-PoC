@@ -22,7 +22,7 @@ with an out-of-bounds x.
 The conditional branch mispredicts,and the ensuing speculative execution reads a secret byte using the out-of-bounds x. 
 The speculative code then reads from array2[array1[x] * 256],leaking the value of array1[x] into the cache state as shown in the code block below.
 
-<img src="spectre-code.png" width="620"></img>
+<img src="spectre-code.png" width="620">
 
 To complete the attack, a simple flush+probe is used to identify which cache line in array2 was loaded, reveaing the memory contents. The attack is repeated several
 times, so even if the target byte was initially uncached,the first iteration will bring it into the cache
